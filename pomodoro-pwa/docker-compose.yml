@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./backend
+    container_name: pomodoro_api
+    ports:
+    
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+
+  
+  web:
+    build: ./frontend
+    container_name: pomodoro_web
+    ports:
+      
+      - "8080:80"
+    depends_on:
+      - api 

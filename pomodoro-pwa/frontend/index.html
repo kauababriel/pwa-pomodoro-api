@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer PWA</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#3498db">
+</head>
+<body>
+    <main>
+        <h1>Focus Timer</h1>
+        <div id="timer-display">25:00</div>
+        <div class="buttons">
+            <button id="start-btn">Iniciar</button>
+            <button id="reset-btn">Resetar</button>
+        </div>
+        
+        <blockquote id="quote-area" class="hidden">
+            <p id="quote-content"></p>
+            <footer id="quote-author"></footer>
+        </blockquote>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
